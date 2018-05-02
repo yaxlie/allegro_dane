@@ -3,7 +3,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 import collection.mutable
 import java.io._
 
-object main {
+object Main {
 
   def main(args: Array[String]): Unit = {
 
@@ -55,7 +55,7 @@ object main {
     for ((k,v) <- count) result += k + "|" + v + "\n"
 
     result+="\nŚREDNIA KWOTA (KRAJ|WALUTA|KWOTA) : \n"
-    for ((k,v) <- amount) result+=k + "|" + v.getResult + "\n"
+    for ((k,v) <- amount) result+=k.replace("WrappedArray(","") + "|" + v.getResult + "\n"
 
     // FileWriter
     val file = new File("result.txt")
