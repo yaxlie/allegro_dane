@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_allegro.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_allegro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala_allegro-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala_allegro-build.iml" />
+    </modules>
+  </component>
+</project>
