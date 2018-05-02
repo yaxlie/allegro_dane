@@ -55,7 +55,7 @@ object Main {
     for ((k,v) <- count) result += k + "|" + v + "\n"
 
     result+="\nŚREDNIA KWOTA (KRAJ|WALUTA|KWOTA) : \n"
-    for ((k,v) <- amount) result+=k.replace("WrappedArray(","") + "|" + v.getResult + "\n"
+    for ((k,v) <- amount) result+=k.replace("WrappedArray(","") + "|" + f"${v.getResult}%1.0f" + "\n"
 
     // FileWriter
     val file = new File("result.txt")
